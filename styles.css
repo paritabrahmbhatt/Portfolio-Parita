@@ -1,0 +1,124 @@
+/* styles.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+    padding: 54px;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 120px;
+}
+
+.container-fluid, .row, .col-md-3, .col-lg-2 {
+    height: 100%;
+    
+}
+
+.main-content {
+    height: 100%;
+    overflow-y: auto;
+}
+
+/* Adjusting the sidebar styles */
+.sidebar-sticky {
+    background-color: #3385ff !important; /* Change background color of the sidebar */
+    color: #fff;
+    /*padding-top: 50px; /* Add padding to the top of the sidebar */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This line centers the content vertically */
+    align-items: center;
+    height: 100%;
+    position: sticky;
+    /*margin-top: auto; /* Adjust the top position of the sticky sidebar */
+    /*top: 120px; /* Adjust the top position of the sticky sidebar */
+    width: 100%;
+}
+
+.active {
+    color: #fff; /* Change color to white or brighter color */
+    font-weight: bold; /* Optionally, you can add other styles */
+}
+
+.nav-link {
+    color: #aac8ff; /* Change the color of the links in the sidebar */
+    padding: 10px 20px; /* Add padding to the links */
+    transition: color 0.3s ease; /* Add transition effect */
+}
+
+.nav-link:hover {
+    color: #fff; /* Change color on hover */
+}
+
+.nav-link.active {
+    color: #ffff; /* Change color of selected item */
+    font-weight: bold;
+}
+
+.nbar-back {
+    background-color: #3385ff;
+}
+
+
+/* Center-align the text within the p element with class 'text-muted' */
+.text-muted.center {
+    text-align: center;
+}
+
+
+#sideNav .navbar-nav .nav-item .nav-link {
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase; }
+  
+#sideNav .navbar-toggler:focus {
+    outline-color: #3385ff; }
+  
+  @media (min-width: 992px) {
+    #sideNav {
+      text-align: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      width: 17rem;
+      height: 100vh; }
+      #sideNav .navbar-brand {
+        display: flex;
+        margin: auto auto 0;
+        padding: 0.5rem; }
+        #sideNav .navbar-brand .img-profile {
+          max-width: 14rem;
+          max-height: 14rem;
+          border: 0.5rem solid rgba(255, 255, 255, 0.2); }
+      #sideNav .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        width: 100%;
+        margin-bottom: auto; }
+        #sideNav .navbar-collapse .navbar-nav {
+          flex-direction: column;
+          width: 100%; }
+          #sideNav .navbar-collapse .navbar-nav .nav-item {
+            display: block; }
+            #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
+              display: block; } }
