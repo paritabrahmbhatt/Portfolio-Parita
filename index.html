@@ -7,6 +7,8 @@
     <link rel="icon" href="Images/Image.jpg">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
 </head>
 <body>
     <div class="row">
@@ -50,57 +52,78 @@
             </section>
         </div>
 
+        <!--Projects Section-->
         <div class="resume-section p-3 p-lg-5 d-flex d-column" id="projects" style="padding-top: 50px;">
             <section> 
                 <span class="d-none d-md-block">
                     <h1 class="mb-5" id="CUOrange"> Projects</h1>
                 </span>
                 <div class="row">
-                    <div class="col-lg-5 mb-5">
+                    <!--Card Begins-->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="Images/Forbes.png" alt="RichestInTheWorld">
+                            <div class="card-body">
+                                <h5 class="card-title">Data Analysis of Forbe's Billionaries</h5>
+                                <p class="card-text">A cloud-based tool to analyze Forbe's Billionaires all over the world.</p>
+                                <span class="badge badge-pill badge-secondary">R</span>
+                                <span class="badge badge-pill badge-secondary">Git</span>
+                                <span class="badge badge-pill badge-secondary">TimeSeries</span>
+                                <span class="badge badge-pill badge-secondary">Statistical Analysis</span>
+                                <span class="badge badge-pill badge-secondary">Butterfly charts</span>
+                            </div>   
+                            
+                            <div class="card-footer">
+                                <a href="https://github.com/paritabrahmbhatt/World-sBillionaires" class="text-dark" target="_blank">
+                                    <i class="fab fa-github-square fa-2x"></i>
+                                </a>
+                                <a href="https://paritabrahmbhatt.github.io/World-sBillionaires/" class="btn btn-dark float-right" >View project</a>
+                            </div>
+
+                        </div>
+                    </div><!--Card Ends-->
+                    
+                    <!--Card Begins-->
+                    <div class="col-md-4 mb-4">
                         <div class="card h-100">
                             <img class="card-img-top" src="Images/admissions.png" alt="Admissions Analysis">
                             <div class="card-body">
-                                <h5 class="card-title">Admissions Trend Analysis</h5>
+                                <h5 class="card-title0">Admissions Trend Analysis</h5>
                                 <p class="card-text">The visualization aids stakeholders in comprehending admission trends over a span of three years, empowering them to make well-informed decisions.
                                 </p>
                                 <span class="badge badge-pill badge-secondary">Tableau</span>
                                 <span class="badge badge-pill badge-secondary">TimeSeries</span>
                                 <span class="badge badge-pill badge-secondary">Yield Rate</span>
                                 <span class="badge badge-pill badge-secondary">Admit Rate</span>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="https://public.tableau.com/views/Admissions_Analytics/AdmissionsTrendAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark btn-block">View Dashboard</a>
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://public.tableau.com/views/Admissions_Analytics/AdmissionsTrendAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right">View Dashboard</a>
                             </div>
                         </div>
-                    </div>
+                    </div> <!--Card Ends-->
+                     
                     
-                    <div class="col-lg-5 mb-5">
+                    <!--Card Begins-->
+                    <div class="col-md-4 mb-4">
                         <div class="card h-100">
-                            <div class="embed-responsive embed-responsive-16by9">
-                                <img class="card-img-top embed-responsive-item" src="Images/netflix.png" alt="Movies and TV shows Analysis">
-                            </div>
+                            <img class="card-img-top" src="Images/netflix.png" alt="Movies and TV shows Analysis">
                             <div class="card-body">
                                 <h5 class="card-title"> Netflix Data Analysis</h5>
                                 <p class="card-text">A dynamic dashboard designed to analyze trends in Netflix movies and TV shows, focusing on demographics, genre, and ratings spanning the past 12 years.</p>
                                 <span class="badge badge-pill badge-secondary">Tableau</span>
                                 <span class="badge badge-pill badge-secondary">Density Map</span>
                                 <span class="badge badge-pill badge-secondary">TimeSeries</span>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="https://public.tableau.com/views/NetflixDataAnalysis_16842621442260/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark btn-block">View Dashboard</a>
-                                    </div>
-                                    
-                                </div>
                             </div>
+                            <div class="card-footer">
+                                <a href="https://public.tableau.com/views/NetflixDataAnalysis_16842621442260/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right">View Dashboard</a>
+
+                            </div> 
                         </div>
-                    </div>
+                    </div> <!--Card Ends-->
                     
-                    <div class="col-lg-5 mb-5">
-                        <div class="card">
+                    <!--Card Begins-->
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100">
                             <img class="card-img-top" src="Images/customers.png" alt="Customer Analysis">
                             <div class="card-body">
                                 <h5 class="card-title">Customer Analysis</h5>
@@ -110,16 +133,13 @@
                                 <span class="badge badge-pill badge-secondary">TimeSeries</span>
                                 <span class="badge badge-pill badge-secondary">Trend Prediction</span>
                                 <span class="badge badge-pill badge-secondary">Butterfly charts</span>
-                                <hr>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <a href="https://public.tableau.com/views/CustomerAnalytics_16851188795040/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark btn-block" id="CUOrange-bg btn_hover">View Dashboard</a>
-                                    </div>
-                                </div>
                             </div>
+                            <div class="card-footer">
+                                    <a href="https://public.tableau.com/views/CustomerAnalytics_16851188795040/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right" id="CUOrange-bg btn_hover">View Dashboard</a>   
+                            </div> 
                         </div>
                     </div>
-                </div>
+                </div> <!--Card Ends-->
                 
             </section>
         </div>
