@@ -16,10 +16,11 @@ html, body {
     margin: 0;
     padding: 54px;
     position: relative;
+    color: #495057; 
 }
 
 .container {
-    width: 80%;
+    width: 100%;
     height: 100%;
     max-width: 1200px;
     margin: 100px auto;
@@ -38,7 +39,7 @@ html, body {
 
 /* Adjusting the sidebar styles */
 .sidebar-sticky {
-    background-color: #3385ff !important; /* Change background color of the sidebar */
+    background-color: #F56600 !important; /* Change background color of the sidebar */
     color: #fff;
     /*padding-top: 50px; /* Add padding to the top of the sidebar */
     display: flex;
@@ -58,28 +59,63 @@ html, body {
 }
 
 .nav-link {
-    color: #aac8ff; /* Change the color of the links in the sidebar */
+    color: #FFFF; /* Change the color of the links in the sidebar */
     padding: 10px 20px; /* Add padding to the links */
     transition: color 0.3s ease; /* Add transition effect */
 }
 
 .nav-link:hover {
-    color: #fff; /* Change color on hover */
+    color: #522D80; /* Change color on hover */
 }
 
 .nav-link.active {
-    color: #ffff; /* Change color of selected item */
+    color: #522D80; /* Change color of selected item */
     font-weight: bold;
 }
 
 .nbar-back {
-    background-color: #3385ff;
+    background-color: #F56600;
 }
 
+.custom-bg-color {
+    background-color: #522D80;
+}
+.navbar {
+    border-color: #522D80;
+}
+
+/* styles.css */
+
+/* Adjust form input fields width */
+.form-floating input,
+.form-floating textarea {
+    width: 100%;
+}
+
+/* Optional: Adjust label position for smaller screens */
+@media (max-width: 576px) {
+    .form-floating label {
+        position: static;
+        font-size: 0.875rem;
+    }
+}
 
 /* Center-align the text within the p element with class 'text-muted' */
 .text-muted.center {
+    color: #F56600;
     text-align: center;
+}
+
+#CUOrange{
+    color: #F56600;
+}
+
+#CUOrange-bg{
+    background-color: #F56600;
+}
+
+#btn_hover:hover{
+    background-color: #F56600;
 }
 
 #projimg{
@@ -94,7 +130,7 @@ html, body {
     text-transform: uppercase; }
   
 #sideNav .navbar-toggler:focus {
-    outline-color: #3385ff; }
+    outline-color: #522D80; }
   
   @media (min-width: 992px) {
     #sideNav {
@@ -113,7 +149,7 @@ html, body {
         #sideNav .navbar-brand .img-profile {
           max-width: 14rem;
           max-height: 14rem;
-          border: 0.5rem solid rgba(255, 255, 255, 0.2); }
+          border: 0.5rem solid #522D80; }
       #sideNav .navbar-collapse {
         display: flex;
         align-items: flex-start;

@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="row">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+        <nav class="navbar navbar-expand-lg navbar-dark custome-bg-color fixed-top" id="sideNav">
             <div class="sidebar-sticky">
                 <span class="d-none d-lg-block">
                     <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="Images/Image.jpg" alt="">
@@ -28,95 +28,153 @@
                 </ul>
             </div>
         </nav>
-
-        <div class="container p-0">
-            <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about" style="padding-top: 50px;">
+    </div>
+    <div class="container p-0">
+        <div class="resume-section p-3 p-lg-5 d-flex  d-column" id="about">
+            <section style="padding-top: 50px; padding-bottom: 50px;">
                 <span class="d-none d-md-block">
                     <h1 >Parita
-                      <span class="text-primary">Brahmbhatt</span>
-                    </h1>
+                        <span id="CUOrange">Brahmbhatt</span>
+                    </h1>  
                     <div class="subheading mb-5">Central, SC 29630 ·
-                      <a href="mailto:paritabrahmbhatt1@gmail.com">paritabrahmbhatt1@gmail.com</a>
+                        <a href="mailto:paritabrahmbhatt1@gmail.com" id="CUOrange">paritabrahmbhatt1@gmail.com</a>
                     </div>
                 </span>
+                <h2 class="mb-5 d-md-none">About</h2>
+                <p class="lead mb-5">
+                    Welcome!👋 I'm a Research Lab Specialist at <a href="https://www.clemson.edu/cecas/departments/eees/index.html" id="CUOrange"><b>Department on Environmental Engineering of Clemson University</b></a> and currently working on building a machine learning model which can predict the gas production of a water treatment plant. 
+                    <br><br>
+                    A data enthusiast and who loves to build business driven solutions. With a background in Big Data Engineering and Infrastructure Management, my expertise primarily lies in Python, SQL, AWS and Data Visualization. 🤓
+                    <br><br>
+                </p>
             </section>
+        </div>
 
-            <div class="resume-section p-3 p-lg-5 d-flex d-column" id="projects" style="padding-top: 50px;">
-                <section> 
-                    <span class="d-none d-md-block">
-                        <h1 class="mb-5"> Projects</h1>
-                    </span>
-                    <div class="row">
-                        <div class="col-lg-4 mb-5">
-                            <div class="card">
-                                <img class="card-img-top" src="Images/admissions.png" alt="Admissions Analysis">
-                                <div class="card-body">
-                                    <h5 class="card-title">Admissions Trend Analysis</h5>
-                                    <p class="card-text">The visualization aids stakeholders in comprehending admission trends over a span of three years, empowering them to make well-informed decisions.
-                                    </p>
-                                    <span class="badge badge-pill badge-secondary">Tableau</span>
-                                    <span class="badge badge-pill badge-secondary">TimeSeries</span>
-                                    <span class="badge badge-pill badge-secondary">Yield Rate</span>
-                                    <span class="badge badge-pill badge-secondary">Admit Rate</span>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <a href="https://public.tableau.com/views/Admissions_Analytics/AdmissionsTrendAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-primary btn-block">View Dashboard</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 mb-5">
-                            <div class="card">
-                                <div class="embed-responsive embed-responsive-16by9">
-                                    <img class="card-img-top embed-responsive-item" src="Images/netflix.png" alt="Movies and TV shows Analysis">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="card-title"> Netflix Data Analysis</h5>
-                                    <p class="card-text">A dynamic dashboard designed to analyze trends in Netflix movies and TV shows, focusing on demographics, genre, and ratings spanning the past 12 years.</p>
-                                    <span class="badge badge-pill badge-secondary">Tableau</span>
-                                    <span class="badge badge-pill badge-secondary">Density Map</span>
-                                    <span class="badge badge-pill badge-secondary">TimeSeries</span>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <a href="https://public.tableau.com/views/NetflixDataAnalysis_16842621442260/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-primary btn-block">View Dashboard</a>
-                                        </div>
-                                        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-4 mb-5">
-                            <div class="card">
-                                <img class="card-img-top" src="Images/customers.png" alt="Customer Analysis">
-                                <div class="card-body">
-                                    <h5 class="card-title">Customer Analysis</h5>
-                                    <p class="card-text">An interactive Tableau visualizations and an intuitive user interface that identifies customer purchasing behaviors, demographics, and preferences.</p>
-                                    <span class="badge badge-pill badge-secondary">Tableau</span>
-                                    <span class="badge badge-pill badge-secondary">Density Maps</span>
-                                    <span class="badge badge-pill badge-secondary">TimeSeries</span>
-                                    <span class="badge badge-pill badge-secondary">Trend Prediction</span>
-                                    <span class="badge badge-pill badge-secondary">Butterfly charts</span>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <a href="https://public.tableau.com/views/CustomerAnalytics_16851188795040/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-primary btn-block">View Dashboard</a>
-                                        </div>
+        <div class="resume-section p-3 p-lg-5 d-flex d-column" id="projects" style="padding-top: 50px;">
+            <section> 
+                <span class="d-none d-md-block">
+                    <h1 class="mb-5" id="CUOrange"> Projects</h1>
+                </span>
+                <div class="row">
+                    <div class="col-lg-5 mb-5">
+                        <div class="card h-100">
+                            <img class="card-img-top" src="Images/admissions.png" alt="Admissions Analysis">
+                            <div class="card-body">
+                                <h5 class="card-title">Admissions Trend Analysis</h5>
+                                <p class="card-text">The visualization aids stakeholders in comprehending admission trends over a span of three years, empowering them to make well-informed decisions.
+                                </p>
+                                <span class="badge badge-pill badge-secondary">Tableau</span>
+                                <span class="badge badge-pill badge-secondary">TimeSeries</span>
+                                <span class="badge badge-pill badge-secondary">Yield Rate</span>
+                                <span class="badge badge-pill badge-secondary">Admit Rate</span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="https://public.tableau.com/views/Admissions_Analytics/AdmissionsTrendAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark btn-block">View Dashboard</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     
-                </section>
-            </div>
+                    <div class="col-lg-5 mb-5">
+                        <div class="card h-100">
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <img class="card-img-top embed-responsive-item" src="Images/netflix.png" alt="Movies and TV shows Analysis">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title"> Netflix Data Analysis</h5>
+                                <p class="card-text">A dynamic dashboard designed to analyze trends in Netflix movies and TV shows, focusing on demographics, genre, and ratings spanning the past 12 years.</p>
+                                <span class="badge badge-pill badge-secondary">Tableau</span>
+                                <span class="badge badge-pill badge-secondary">Density Map</span>
+                                <span class="badge badge-pill badge-secondary">TimeSeries</span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="https://public.tableau.com/views/NetflixDataAnalysis_16842621442260/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark btn-block">View Dashboard</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-5 mb-5">
+                        <div class="card">
+                            <img class="card-img-top" src="Images/customers.png" alt="Customer Analysis">
+                            <div class="card-body">
+                                <h5 class="card-title">Customer Analysis</h5>
+                                <p class="card-text">An interactive Tableau visualizations and an intuitive user interface that identifies customer purchasing behaviors, demographics, and preferences.</p>
+                                <span class="badge badge-pill badge-secondary">Tableau</span>
+                                <span class="badge badge-pill badge-secondary">Density Maps</span>
+                                <span class="badge badge-pill badge-secondary">TimeSeries</span>
+                                <span class="badge badge-pill badge-secondary">Trend Prediction</span>
+                                <span class="badge badge-pill badge-secondary">Butterfly charts</span>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <a href="https://public.tableau.com/views/CustomerAnalytics_16851188795040/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark btn-block" id="CUOrange-bg btn_hover">View Dashboard</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
         </div>
 
-
+        <div class="resume-section p-3 p-lg-5 d-flex d-column" id="contact" style="padding-top: 50px;">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0" id="CUOrange">Let's Get In Touch!</h2>
+                    <hr class="divider" />
+                    <p class="text-muted mb-5">Come say Hi! I'm always happy to hear feedback. And hey, who doesn't like free movie/book recommendations?</p>
+                </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                <section style="padding-top: 50px; padding-bottom: 50px;">
+                    <div class="col-lg-16"> <!-- Increased column width to col-lg-8 -->
+                        <form id="contactForm" action="https://formspree.io/f/xeqwoqwl" method="POST">
+                            <!-- Name input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" style="width: 100%;" />
+                                <label for="name">Full name</label>
+                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                            </div>
+                            <!-- Email address input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" style="width: 100%;" />
+                                <label for="email">Email address</label>
+                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                            </div>
+                            <!-- Phone number input-->
+                            <div class="form-floating mb-3">
+                                <input class="form-control" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" style="width: 100%;" />
+                                <label for="phone">Phone number</label>
+                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                            </div>
+                            <!-- Message input-->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem; width: 100%;" data-sb-validations="required"></textarea>
+                                <label for="message">Message</label>
+                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                            </div>
+                            <!-- Submit Button-->
+                            <div class="d-grid"><button class="btn btn-dark btn-xl" id="submitButton" type="submit">Submit</button></div>
+                        </form>
+                    </div>
+                </section>
+                
+                <footer class="text-muted center lh-sm" style="padding-top: 20;" id="footer_bg">
+                    <div class="container">
+                        <p>&copy; 2024 Parita Brahmbhatt. All rights reserved.</p>
+                    </div>
+                </footer>
+        </div>
+        
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
