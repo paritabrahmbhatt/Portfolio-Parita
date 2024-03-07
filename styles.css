@@ -82,6 +82,11 @@ html, body {
     text-align: center;
 }
 
+#projimg{
+    width: 100px;
+    height: 100px;
+    
+}
 
 #sideNav .navbar-nav .nav-item .nav-link {
     font-weight: 700;
