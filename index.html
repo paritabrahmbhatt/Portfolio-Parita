@@ -8,6 +8,11 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com">
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+    
+    <!-- Custom fonts for this template -->
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
@@ -18,6 +23,10 @@
     <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     
     <link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" rel="stylesheet" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-Ky47MNL+c1xAp4oNXZ4RZGmW0SPTa8+7Yg1LKixub+y8d1yOWYz7KxRFW+y7Jawh90qDPTVuDFx/PErHL+jdkg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
 
 
 </head>
@@ -44,10 +53,10 @@
     </div>
     <div class="container p-0">
         <div class="resume-section p-3 p-lg-5 d-flex  d-column" id="about">
-            <section style="padding-top: 50px; padding-bottom: 50px;">
+            <section>
                 <span class="d-none d-md-block">
                     <h1 >Parita
-                        <span class="text-primary">Brahmbhatt</span>
+                        <span class="text-primary" id="CUPurple">Brahmbhatt</span>
                     </h1>  
                     <div class="subheading mb-5">Central, SC 29630 ·
                         <a href="mailto:paritabrahmbhatt1@gmail.com" id="CUOrange">paritabrahmbhatt1@gmail.com</a>
@@ -57,9 +66,37 @@
                 <p class="lead mb-5">
                     Welcome!👋 I'm a Research Lab Specialist at <a href="https://www.clemson.edu/cecas/departments/eees/index.html" id="CUOrange"><b>Department on Environmental Engineering of Clemson University</b></a> and currently working on building a machine learning model which can predict the gas production of a water treatment plant. 
                     <br><br>
-                    A data enthusiast and who loves to build business driven solutions. With a background in Big Data Engineering and Infrastructure Management, my expertise primarily lies in Python, SQL, AWS and Data Visualization. 🤓
+                    A data enthusiast and who loves to build business driven solutions. With a background in Data Analysis and Infrastructure Management, my expertise primarily lies in Python, SQL, R and Data Visualization. 🤓
                     <br><br>
                 </p>
+                <ul class="list-inline list-social-icons mb-4" >
+                    <li class="list-inline-item">
+                        <a href="https://www.linkedin.com/in/parita-brahmbhatt-908148159/" target="_blank" aria-label="Parita's Linkedin profile">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="https://github.com/paritabrahmbhatt" target="_blank" aria-label="Parita's Github profile">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                          </span>
+                        </a>
+                      </li>
+                    <li class="list-inline-item">
+                        <a href="https://public.tableau.com/app/profile/parita.brahmbhatt" target="_blank" aria-label="Open Parita's Tableau profile in a new tab">
+                          <span class="fa-stack fa-lg">
+                            <i class="fa fa-circle fa-stack-2x"></i>
+                            <img src="Images/Tableau-Symbol.png" class="fa-stack-1x fa-inverse"  alt="Tableau">
+                          </span>
+                        </a>
+                    </li>
+                </ul>
+                <a href="https://github.com/paritabrahmbhatt/Portfolio-Parita/blob/main/Parita_Brahmbhatt_Resume.pdf" aria-label="Parita's resume" class="btn btn-dark btn-lg mt-10" role="button" aria-pressed="true"  target="_blank" id="special-button">Download Resume</a>
+                
             </section>
         </div>
 
@@ -67,7 +104,7 @@
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="projects" style="padding-top: 50px;">
             <div class="w-100">
                 <span class="d-none d-md-block">
-                    <h1 class="mb-5" id="CUOrange"> Projects</h1>
+                    <h1 class="mb-5"> Projects</h1>
                 </span>
                 <p>A few academic and self developed projects</p>
                 <div class="row">
@@ -85,14 +122,14 @@
                             </div>   
                             
                             <div class="card-footer">
-                                <a href="https://github.com/paritabrahmbhatt/World-sBillionaires" class="text-dark" target="_blank">
+                                <a href="https://github.com/paritabrahmbhatt/World-sBillionaires" class="text-dark" target="_blank" id="special-button">
                                     <i class="fab fa-github-square fa-2x"></i>
                                 </a>
-                                <a href="https://paritabrahmbhatt.github.io/World-sBillionaires/" class="btn btn-dark float-right" >View project</a>
+                                <a href="https://paritabrahmbhatt.github.io/World-sBillionaires/" class="btn btn-dark float-right" id="special-button">View project</a>
                             </div>
 
                         </div>
-                    </div><!--Card Ends-->
+                    </div><!--Project Section Ends-->
                     
                     <!--Card Begins-->
                     <div class="col-md-4 mb-4">
@@ -108,7 +145,7 @@
                                 <span class="badge badge-pill badge-secondary">Admit Rate</span>
                             </div>
                             <div class="card-footer">
-                                <a href="https://public.tableau.com/views/Admissions_Analytics/AdmissionsTrendAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right">View Dashboard</a>
+                                <a href="https://public.tableau.com/views/Admissions_Analytics/AdmissionsTrendAnalysis?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right" id="special-button">View Dashboard</a>
                             </div>
                         </div>
                     </div> <!--Card Ends-->
@@ -126,8 +163,9 @@
                                 <span class="badge badge-pill badge-secondary">TimeSeries</span>
                             </div>
                             <div class="card-footer">
-                                <a href="https://public.tableau.com/views/NetflixDataAnalysis_16842621442260/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right">View Dashboard</a>
-
+                                <a href="https://public.tableau.com/views/NetflixDataAnalysis_16842621442260/Netflix?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right" id="special-button">
+                                    View Dashboard
+                                </a>
                             </div> 
                         </div>
                     </div> <!--Card Ends-->
@@ -146,7 +184,7 @@
                                 <span class="badge badge-pill badge-secondary">Butterfly charts</span>
                             </div>
                             <div class="card-footer">
-                                    <a href="https://public.tableau.com/views/CustomerAnalytics_16851188795040/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right" id="CUOrange-bg btn_hover">View Dashboard</a>   
+                                    <a href="https://public.tableau.com/views/CustomerAnalytics_16851188795040/Dashboard1?:language=en-US&:sid=&:display_count=n&:origin=viz_share_link" class="btn btn-dark float-right" id="special-button">View Dashboard</a>   
                             </div> 
                         </div>
                     </div>
@@ -169,7 +207,7 @@
 
                 <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
                     
-                        <div class="col-lg-6"> <!-- Increased column width to col-lg-8 -->
+                        <div class="col-lg-4"> <!-- Increased column width to col-lg-8 -->
                             <form id="contactForm" action="https://formspree.io/f/xeqwoqwl" method="POST">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
@@ -192,7 +230,7 @@
                                 </div>
                                 <!-- Message input-->
                                 <div class="form-floating mb-3">
-                                    <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem; width: 100%;" data-sb-validations="required"></textarea>
+                                    <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 9rem; width: 100%;" data-sb-validations="required"></textarea>
                                     <label for="message">Message</label>
                                     <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                                 </div>
@@ -211,5 +249,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        const socialIconsTemplate = document.getElementById("social-icons").content;
+        const social_icons_mobile = document.getElementById("social-icons-mobile");
+        social_icons_mobile.appendChild(document.importNode(socialIconsTemplate, true));
+        const social_icons_web = document.getElementById("social-icons-web");
+        social_icons_web.appendChild(document.importNode(socialIconsTemplate, true));
+    </script>
+  
 </body>
 </html>
