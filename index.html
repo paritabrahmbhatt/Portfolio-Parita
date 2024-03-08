@@ -8,6 +8,17 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendor/fancybox/css/jquery.fancybox.min.css">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a680f175d2.js" crossorigin="anonymous"></script>
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" rel="stylesheet" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+
 
 </head>
 <body>
@@ -19,13 +30,13 @@
                 </span>
                 <ul class="nav flex-column justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link about" href="#about">ABOUT</a>
+                        <a class="nav-lin" href="#about">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link portfolio" href="#projects">PROJECTS</a>
+                        <a class="nav-link" href="#projects">PROJECTS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link contact" href="#contact">CONTACT</a>
+                        <a class="nav-link" href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -36,7 +47,7 @@
             <section style="padding-top: 50px; padding-bottom: 50px;">
                 <span class="d-none d-md-block">
                     <h1 >Parita
-                        <span id="CUOrange">Brahmbhatt</span>
+                        <span class="text-primary">Brahmbhatt</span>
                     </h1>  
                     <div class="subheading mb-5">Central, SC 29630 ·
                         <a href="mailto:paritabrahmbhatt1@gmail.com" id="CUOrange">paritabrahmbhatt1@gmail.com</a>
@@ -53,11 +64,12 @@
         </div>
 
         <!--Projects Section-->
-        <div class="resume-section p-3 p-lg-5 d-flex d-column" id="projects" style="padding-top: 50px;">
-            <section> 
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="projects" style="padding-top: 50px;">
+            <div class="w-100">
                 <span class="d-none d-md-block">
                     <h1 class="mb-5" id="CUOrange"> Projects</h1>
                 </span>
+                <p>A few academic and self developed projects</p>
                 <div class="row">
                     <!--Card Begins-->
                     <div class="col-md-4 mb-4">
@@ -70,7 +82,6 @@
                                 <span class="badge badge-pill badge-secondary">Git</span>
                                 <span class="badge badge-pill badge-secondary">TimeSeries</span>
                                 <span class="badge badge-pill badge-secondary">Statistical Analysis</span>
-                                <span class="badge badge-pill badge-secondary">Butterfly charts</span>
                             </div>   
                             
                             <div class="card-footer">
@@ -88,7 +99,7 @@
                         <div class="card h-100">
                             <img class="card-img-top" src="Images/admissions.png" alt="Admissions Analysis">
                             <div class="card-body">
-                                <h5 class="card-title0">Admissions Trend Analysis</h5>
+                                <h5 class="card-title">Admissions Trend Analysis</h5>
                                 <p class="card-text">The visualization aids stakeholders in comprehending admission trends over a span of three years, empowering them to make well-informed decisions.
                                 </p>
                                 <span class="badge badge-pill badge-secondary">Tableau</span>
@@ -141,58 +152,59 @@
                     </div>
                 </div> <!--Card Ends-->
                 
-            </section>
-        </div>
-
-        <div class="resume-section p-3 p-lg-5 d-flex d-column" id="contact" style="padding-top: 50px;">
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <div class="col-lg-8 col-xl-6 text-center">
-                    <h2 class="mt-0" id="CUOrange">Let's Get In Touch!</h2>
-                    <hr class="divider" />
-                    <p class="text-muted mb-5">Come say Hi! I'm always happy to hear feedback. And hey, who doesn't like free movie/book recommendations?</p>
-                </div>
             </div>
-            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                <section style="padding-top: 50px; padding-bottom: 50px;">
-                    <div class="col-lg-16"> <!-- Increased column width to col-lg-8 -->
-                        <form id="contactForm" action="https://formspree.io/f/xeqwoqwl" method="POST">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" style="width: 100%;" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" style="width: 100%;" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" style="width: 100%;" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem; width: 100%;" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-dark btn-xl" id="submitButton" type="submit">Submit</button></div>
-                        </form>
+        </section>
+
+
+
+        <section class="resume-section p-3 p-lg-5 d-flex d-column" id="contact">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6 text-center">
+                        <h2 class="mt-0" id="CUOrange">Let's Get In Touch!</h2>
+                        <hr class="divider" />
+                        <p class="text-muted mb-5">Come say Hi! I'm always happy to hear feedback. And hey, who doesn't like free movie/book recommendations?</p>
                     </div>
-                </section>
-                
-                <footer class="text-muted center lh-sm" style="padding-top: 20;" id="footer_bg">
-                    <div class="container">
-                        <p>&copy; 2024 Parita Brahmbhatt. All rights reserved.</p>
-                    </div>
-                </footer>
-        </div>
+                </div>
+
+                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                    
+                        <div class="col-lg-6"> <!-- Increased column width to col-lg-8 -->
+                            <form id="contactForm" action="https://formspree.io/f/xeqwoqwl" method="POST">
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" name="name" type="text" placeholder="Enter your name..." data-sb-validations="required" style="width: 100%;" />
+                                    <label for="name">Full name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+                                <!-- Email address input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" name="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" style="width: 100%;" />
+                                    <label for="email">Email address</label>
+                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                                </div>
+                                <!-- Phone number input-->
+                                <div class="form-floating mb-3">
+                                    <input class="form-control" name="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" style="width: 100%;" />
+                                    <label for="phone">Phone number</label>
+                                    <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
+                                </div>
+                                <!-- Message input-->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="message" type="text" placeholder="Enter your message here..." style="height: 10rem; width: 100%;" data-sb-validations="required"></textarea>
+                                    <label for="message">Message</label>
+                                    <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                                </div>
+                                <!-- Submit Button-->
+                                <div class="d-grid"><button class="btn btn-dark btn-xl" id="submitButton" type="submit">Submit</button></div>
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>   
+
+        </section>  
         
     </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
