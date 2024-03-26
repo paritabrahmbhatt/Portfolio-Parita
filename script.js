@@ -50,3 +50,30 @@ document.addEventListener("DOMContentLoaded", function() {
     // Update navigation on page load
     updateNav();
 });
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to adjust margin based on the width of the fixed navbar (only for large screens)
+    function adjustMargin() {
+        const navbarWidth = document.querySelector('.navbar').offsetWidth;
+        const contentSections = document.querySelectorAll('.resume-section');
+
+        // Check if the screen width is greater than or equal to 992px (Bootstrap's lg breakpoint)
+        if (window.innerWidth >= 992) {
+            let marginValue = navbarWidth;
+            // If the screen width is larger than a certain threshold, reduce the margin
+            marginValue *= 0.5; // Adjust the reduction factor as needed
+            // Loop through each content section and add left margin
+            contentSections.forEach(section => {
+                section.style.marginLeft = marginValue + 'px';
+            });
+        } else {
+            // If the screen width is smaller than 992px, remove the left margin from content sections
+            contentSections.forEach(section => {
+                section.style.marginLeft = '0';
+            });
+        }
+    }
+
+    // Call the adjustMargin function when the page is loaded and when it's resized
+    window.addEventListener('load', adjustMargin);
+    window.addEventListener('resize', adjustMargin);
+});
